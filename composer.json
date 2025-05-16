@@ -3,7 +3,7 @@
   "type": "wordpress-plugin",
   "license": "MIT",
   "description": "Advanced Custom Fields - JSON",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "keywords": [
     "wordpress",
     "acf"

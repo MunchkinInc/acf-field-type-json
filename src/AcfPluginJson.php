@@ -2,7 +2,8 @@
 
 namespace AcfFieldTypeJson;
 
-class AcfPluginJson {
+class AcfPluginJson
+{
 
 	/*
     *  __construct
@@ -17,11 +18,12 @@ class AcfPluginJson {
 	*  @return	n/a
 	*/
 
-	function __construct() {
+	function __construct()
+	{
 
 		// set text domain
 		// https://codex.wordpress.org/Function_Reference/load_plugin_textdomain
-		load_plugin_textdomain( 'acf-json', false, plugin_basename( dirname( __FILE__ ) ) . '/lang' );
+		load_plugin_textdomain('acf-json', false, plugin_basename(dirname(__FILE__)) . '/lang');
 
 
 		// include field
@@ -42,18 +44,12 @@ class AcfPluginJson {
 	 *
 	 *  @param	$version (int) major ACF version. Defaults to 4
 	 *  @return	void
-	*/
+	 */
 
-	function include_field_types( int $version = 4 ): void {
+	function include_field_types(int $version = 4): void
+	{
 
 		// include
-		include_once(__DIR__ . '/../fields/acf-json-' . self::version($version) . '.php');
-
+		include_once(__DIR__ . '/../fields/acf-json.php');
 	}
-
-    public static function version( int $version ): string {
-        return 'v' . $version;
-    }
-
 }
-
