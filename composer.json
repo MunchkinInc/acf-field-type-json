@@ -1,20 +1,8 @@
 {
-  "name": "rozklad/acf-field-type-json",
+  "name": "munchkin/acf-field-type-json",
   "type": "wordpress-plugin",
   "license": "MIT",
   "description": "Advanced Custom Fields - JSON",
-  "homepage": "https://rozklad.dev",
-  "authors": [
-    {
-      "name": "rozklad",
-      "email": "jan.rozklad@gmail.com",
-      "homepage": "https://rozklad.dev"
-    },
-    {
-      "name": "mattluk",
-      "email": "matejlukas12@gmail.com"
-    }
-  ],
   "keywords": [
     "wordpress",
     "acf"
